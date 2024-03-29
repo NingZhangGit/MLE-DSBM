@@ -18,7 +18,7 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 ```
 
 * Cite our paper:
-<pre>
+```
   @misc{MLE_DSBM,
         title={Maximum Likelihood Estimation on Stochastic Blockmodels for Directed Graph Clustering}, 
         author={Mihai Cucuringu and Xiaowen Dong and Ning Zhang},
@@ -27,4 +27,4 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
         archivePrefix={arXiv},
         primaryClass={stat.ML}
         }
-<pre>
+```
