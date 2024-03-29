@@ -10,3 +10,4 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 
 * scripts included:
   - Embedding.m: visualize MLE-driven embedding space
+  - DSBM_visualize_adj: visualize adjacency relation before & after clustering on DSBM synthetic dataset
