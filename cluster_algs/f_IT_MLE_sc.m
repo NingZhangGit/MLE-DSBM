@@ -84,7 +84,7 @@ while error>t
     w2_new = -log(4*eta_val(count)*(1-eta_val(count))) + 2*log(p_val(count)/q_val(count));
     w3_new = 2*log((1-p_val(count))/(1-q_val(count)));
     error = (abs(w1-w1_new) + abs(w2-w2_new) + abs(w3-w3_new))./(abs(w1) + abs(w2) + abs(w3));
-    % fprintf('Iteration %d: updates = %.2f \n',count,error)
+    % fprintf('Iteration %d: updates = %.1f%% \n',count,error*100)
     w1 = w1_new;
     w2 = w2_new;
     w3 = w3_new;
