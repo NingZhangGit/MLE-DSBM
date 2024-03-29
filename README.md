@@ -1,5 +1,5 @@
 
-MATLAB code for directed graph clustering algorithms proposed in our paper\
+MATLAB code for directed graph clustering algorithms proposed in our paper:\
 [Maximum Likelihood Estimation on Stochastic Blockmodels for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 * You will need optimization toolboxes to implement the SDP:
   - **[recommended]** If you implement the Burer-Monteiro method, please install [Manopt](https://www.manopt.org/tutorial.html).
