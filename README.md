@@ -1,4 +1,4 @@
-# MLE-DSBM
+
 MATLAB code for directed graph clustering algorithms proposed in our paper [Maximum Likelihood Estimation on Stochastic Blockmodels
 for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 
