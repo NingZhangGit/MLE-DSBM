@@ -1,4 +1,4 @@
-%%
+%% Experiment on the Eu-email-core dataset (2nd and 3rd)
 clear all
 close all
 clc
