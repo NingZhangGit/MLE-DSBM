@@ -15,7 +15,7 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
    'Iter_Convg_Rand.m': visualize how the iterative algorithm (Algorithm 4 in our paper) updates the DSBM parameters
    'cluster_algs/f_IT_MLE_sc.m': MLE-SC (Algorithm 4 + Algorithm 1) in our paper
    'cluster_algs/f_IT_MLE_bm.m': MLE-SDP (Algorithm 4 + Algorithm 3) in our paper (can replace Algorithm 3 with Algorithm 2 if you prefer using SDP solver)
-<pre>
+</pre>pre>
 
 * Cite our paper:
 ```
