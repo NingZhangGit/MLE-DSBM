@@ -8,7 +8,7 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 - Contact: ning.zhang@stats.ox.ac.uk
 
 * scripts included:
-  - 'Embedding.m': visualize MLE-driven embedding space
+> Embedding.m: visualize MLE-driven embedding space
   - DSBM_visualize_adj: visualize adjacency relation before & after clustering on DSBM synthetic dataset
   - DSBM_comp: compare our algorithms (MLE-SC and MLE-SDP) with existing directed clustering methods
   - Iter_Convg_Rand: visualize how the iterative algorithm (Algorithm 4 in our paper) updates the DSBM parameters
