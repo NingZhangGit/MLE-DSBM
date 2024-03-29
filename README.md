@@ -7,3 +7,6 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 - If you implement the Burer-Monteiro method for directed clustering, please install [Manopt](https://www.manopt.org/tutorial.html).
 
 - Contact: ning.zhang@stats.ox.ac.uk
+
+- some scripts:
+  -- Embedding.m: MLE-driven embedding space
