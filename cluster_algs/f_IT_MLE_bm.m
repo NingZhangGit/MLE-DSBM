@@ -1,11 +1,11 @@
-
 %% Iterative algorithm (Algorithm 4) + BM clustering (Algorithm3) 
 % Inputs:
     % Ad: graph adjacency matrix
     % k: number of clusters, in this study k=2
     % opt: choose initializations for iterative algorithm
-        % option 1:  i(A-A^T) + (A+A^T)
-        % option 2: Hermitian clustering i(A-A^T)
+        % initial option 1: Balanced i(A-A^T) + (A+A^T)
+        % initial option 2: Net flow preferred clustering i(A-A^T)
+        % initial option 3: Total flow preferred clustering A+A^T
     % t: threshold
 % Outputs:
     % y_bm: claster label vector
@@ -18,15 +18,19 @@ function [y_bm,p_,q_,eta_] = f_IT_MLE_bm(Ad,k,opt,t)
 N = length(Ad);
 A = Ad+Ad';
 count = 0;
-max_count = 50; % maximum num of iterations
-% Initialize Hermitian matrix
+max_count = 20; % maximum num of iterations
+
 if opt==1
     w1 = 1;
     w2 = 1;
     w3 = 0;
-else
+elseif opt==2
     w1 = 1;
     w2 = 0;
+    w3 = 0;
+elseif opt ==3
+    w1 = 0;
+    w2 = 1;
     w3 = 0;
 end
 
@@ -87,7 +91,7 @@ while error>t
     w2_new = -log(4*eta_val(count)*(1-eta_val(count))) + 2*log(p_val(count)/q_val(count));
     w3_new = 2*log((1-p_val(count))/(1-q_val(count)));
     error = (abs(w1-w1_new) + abs(w2-w2_new) + abs(w3-w3_new))./(abs(w1) + abs(w2) + abs(w3));
-    % fprintf('Iteration %d: updates = %.1f%%  \n',count,error*100)
+    fprintf('MLE-SDP iteration %d: updates = %.1f%%  \n',count,error*100)
     w1 = w1_new;
     w2 = w2_new;
     w3 = w3_new;

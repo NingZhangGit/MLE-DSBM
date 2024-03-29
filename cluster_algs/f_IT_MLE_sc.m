@@ -1,14 +1,15 @@
+%% Iterative algorithm (Algorithm 4) + Spectral clustering (Algorithm1) 
 
-%% Iterative algorithm (Algorithm 4) + spectral clustering (Algorithm1) 
 % Inputs:
     % Ad: graph adjacency matrix
     % k: number of clusters, in this study k=2
     % opt: choose initializations for iterative algorithm
-        % option 1:  i(A-A^T) + (A+A^T)
-        % option 2: Hermitian clustering i(A-A^T)
+        % initial option 1: Balanced i(A-A^T) + (A+A^T)
+        % initial option 2: Net flow preferred clustering i(A-A^T)
+        % initial option 3: Total flow preferred clustering A+A^T
     % t: threshold
 % Outputs:
-    % y_bm: cluster label vector
+    % y_bm: claster label vector
     % p_: estimated DSBM parameter p 
     % q_: estimated DSBM parameter q
     % eta_: estimated DSBM parameter eta 
@@ -24,11 +25,16 @@ if opt==1
     w1 = 1;
     w2 = 1;
     w3 = 0;
-else
+elseif opt==2
     w1 = 1;
     w2 = 0;
     w3 = 0;
+elseif opt ==3
+    w1 = 0;
+    w2 = 1;
+    w3 = 0;
 end
+
 error = 100;
 p_val =[];
 q_val = [];
@@ -70,7 +76,7 @@ while error>t
     eta_val(count) = min(size12/(size12+size21),size21/(size12+size21));
 
     if p_val(count)==0 
-        p_val(count) = 1e-10;
+        p_val(count) = 1e-5;
     end
     if q_val(count)==0 
         q_val(count) = 1e-5;
@@ -84,7 +90,7 @@ while error>t
     w2_new = -log(4*eta_val(count)*(1-eta_val(count))) + 2*log(p_val(count)/q_val(count));
     w3_new = 2*log((1-p_val(count))/(1-q_val(count)));
     error = (abs(w1-w1_new) + abs(w2-w2_new) + abs(w3-w3_new))./(abs(w1) + abs(w2) + abs(w3));
-    % fprintf('Iteration %d: updates = %.1f%% \n',count,error*100)
+    fprintf('MLE-SC iteration %d: updates = %.1f%% \n',count,error*100)
     w1 = w1_new;
     w2 = w2_new;
     w3 = w3_new;
