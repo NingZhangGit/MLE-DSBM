@@ -2,7 +2,7 @@
 MATLAB code for directed graph clustering algorithms proposed in our paper\
 [Maximum Likelihood Estimation on Stochastic Blockmodels for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 * You will need optimization toolboxes to implement the SDP:
-  - **[recommended]** If you implement with the Burer-Monteiro method, please install [Manopt](https://www.manopt.org/tutorial.html).
+  - **[recommended]** If you implement the Burer-Monteiro method, please install [Manopt](https://www.manopt.org/tutorial.html).
    - If you choose to solve SDP directly, please install [CVX](https://cvxr.com/cvx/).
 
 - Contact: ning.zhang@stats.ox.ac.uk
