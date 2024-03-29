@@ -59,8 +59,8 @@ Asym = Ad'+Ad;
 y_hat_Asym = f_SpeCluster(Asym,2);
 
 % (2.5) iterative MLE
-y_hat_MLEsc = f_EM_MLE_sc(Ad,k,2,1e-2);
-y_hat_MLEbm = f_EM_MLE_bm(Ad,k,2,1e-2);
+y_hat_MLEsc = f_IT_MLE_sc(Ad,k,2,1e-2);
+y_hat_MLEbm = f_IT_MLE_bm(Ad,k,2,1e-2);
 
 %% comparision
 ARI_H = f_ARI(y,y_hat_H);

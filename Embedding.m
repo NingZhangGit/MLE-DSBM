@@ -1,4 +1,4 @@
-%% This script is for MLE-driven emebdding space visualization
+%% This script is for MLE-driven embedding space visualization
 
 %%
 close all
