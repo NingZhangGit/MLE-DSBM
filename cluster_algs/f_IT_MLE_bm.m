@@ -83,7 +83,7 @@ while error>t
     end
     
     % Update Hermitian matrix using MLE derived formula
-    w1_new = -log((1-eta_val(count))/eta_val(count));
+    w1_new = log((1-eta_val(count))/eta_val(count));
     w2_new = -log(4*eta_val(count)*(1-eta_val(count))) + 2*log(p_val(count)/q_val(count));
     w3_new = 2*log((1-p_val(count))/(1-q_val(count)));
     error = (abs(w1-w1_new) + abs(w2-w2_new) + abs(w3-w3_new))./(abs(w1) + abs(w2) + abs(w3));
