@@ -9,4 +9,4 @@ for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 - Contact: ning.zhang@stats.ox.ac.uk
 
 * scripts included:
-  -- Embedding.m: visualize MLE-driven embedding space
+  - Embedding.m: visualize MLE-driven embedding space
