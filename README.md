@@ -6,8 +6,9 @@ MATLAB code for directed graph clustering algorithms proposed in our paper:\
    - If you choose to solve SDP directly, please install [CVX](https://cvxr.com/cvx/).
 
 - Contact: ning.zhang@stats.ox.ac.uk
+[I plan to upload a Python version of the algorithms later!]
 
-* scripts included:
+* Scripts included:
 <pre>
    'Embedding.m': visualize MLE-driven embedding space
    'DSBM_visualize_adj': visualize adjacency relation before & after clustering on DSBM synthetic dataset
