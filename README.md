@@ -1,8 +1,8 @@
 - _**Try out the algorithms and demos online here!**_ [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ningz97/MLE-DSBM) 
-- This project contain MATLAB code for directed graph clustering algorithms proposed in our paper:\
+- This project contains MATLAB code for directed graph clustering algorithms proposed in our paper:\
 [Maximum Likelihood Estimation on Stochastic Blockmodels for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
-* You will need optimization toolboxes to implement the SDP:
-  - **[recommended]** If you implement the Burer-Monteiro method, please install [Manopt](https://www.manopt.org/tutorial.html).
+* We used these toolboxes for solving the SDP:
+  - **[default]** If you implement the Burer-Monteiro method, please install [Manopt](https://www.manopt.org/tutorial.html).
    - If you choose to solve SDP directly, please install [CVX](https://cvxr.com/cvx/).
 
 - Contact: ning.zhang@stats.ox.ac.uk
