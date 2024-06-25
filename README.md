@@ -8,6 +8,7 @@ MATLAB code for directed graph clustering algorithms proposed in our paper:\
 - Contact: ning.zhang@stats.ox.ac.uk
 [I plan to upload a Python version of the algorithms later!]
 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ningz97/MLE-DSBM) 
 * Scripts included:
 <pre>
    'Embedding.m': visualize MLE-driven embedding space
