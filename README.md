@@ -1,4 +1,4 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ningz97/MLE-DSBM) \
+Try out the algorithms and demos online here! [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ningz97/MLE-DSBM) \
 MATLAB code for directed graph clustering algorithms proposed in our paper:\
 [Maximum Likelihood Estimation on Stochastic Blockmodels for Directed Graph Clustering](http://arxiv.org/abs/2403.19516)
 * You will need optimization toolboxes to implement the SDP:
