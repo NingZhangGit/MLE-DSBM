@@ -6,7 +6,6 @@
    - If you choose to solve SDP directly, please install [CVX](https://cvxr.com/cvx/).
 
 - Contact: ning.zhang@stats.ox.ac.uk
-[I plan to upload a Python version of the algorithms later!]
 
 
 * Scripts included:
