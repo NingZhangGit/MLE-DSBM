@@ -5,10 +5,12 @@
 close all
 clear all
 clc
-addpath('../cluster_algs')
-addpath('../functions')
-addpath('../metrics')
+addpath('cluster_algs')
+addpath('functions')
+addpath('metrics')
+addpath('manopt')
 addpath('..')
+importmanopt()
 
 %% (1) Generate DSBM
 % set DSBM parameters
